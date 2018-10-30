@@ -30,7 +30,8 @@ Add a new root object `publish-gcs` to your package.json. (see [publish-gcs obje
     "bucket": "releases.cool.app", // Your GCS bucket
     "path": "/${name}/${os}/${arch}/${filename}",
     "serviceAccount": "D:\\cool-app\\secrets\\service-account.json",
-    "public": true
+    "public": true,
+    "resumable": true
   }
 }
 ```
@@ -41,7 +42,8 @@ Add a new root object `publish-gcs` to your package.json. (see [publish-gcs obje
   "bucket": "releases.cool.app",
   "path": "/${name}/${os}/${arch}/${filename}",
   "serviceAccount": "D:\\cool-app\\secrets\\service-account.json",
-  "public": true
+  "public": true,
+  "resumable": true
 }
 ```
 ### `bucket`
@@ -101,3 +103,9 @@ Type: `boolean`
 Default: `true`
 
 See [Bucket#upload](https://cloud.google.com/nodejs/docs/reference/storage/2.0.x/Bucket#upload) (options.public)
+
+### `resumable`
+Type: `boolean`  
+Default: `true`
+
+See [Bucket#upload](https://cloud.google.com/nodejs/docs/reference/storage/2.0.x/Bucket#upload) (options.resumable)
