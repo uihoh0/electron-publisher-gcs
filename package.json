@@ -1,0 +1,28 @@
+{
+  "name": "electron-publisher-gcs",
+  "version": "0.1.0",
+  "description": "electron-builder Google Cloud Storage bucket publisher (because GCS's S3-compat API doesn't support the S3 publisher)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": "git@github.com:FNCxPro/electron-publisher-gcs.git",
+  "author": "Seth Stephens <seth@bowlingview.com>",
+  "license": "GPL-3.0-only",
+  "bugs": {
+    "url": "https://github.com/FNCxPro/electron-publisher-gcs/issues"
+  },
+  "scripts": {
+    "build": "tsc",
+    "lint": "tslint src/**/*.ts"
+  },
+  "dependencies": {
+    "@google-cloud/storage": "^2.2.0",
+    "app-builder-lib": "^20.30.0",
+    "builder-util": "^7.1.0",
+    "electron-publish": "^20.30.0",
+    "fs-extra-p": "^4.6.1"
+  },
+  "devDependencies": {
+    "tslint": "^5.11.0",
+    "typescript": "^3.1.4"
+  }
+}
