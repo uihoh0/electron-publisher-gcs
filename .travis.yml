@@ -1,0 +1,17 @@
+language: node_js
+node_js:
+- 10
+cache: yarn
+install:
+- yarn install
+script:
+- yarn lint
+- yarn build
+deploy:
+  provider: npm
+  email: relative@outlook.ie
+  api_key:
+    secure: LZHDlYS39BdMGUGrcwVQldBKuB8JjEakS0/pFphgvEjLDilS1581cyNzJzBwTh4EckOD+GxEh4328Dky/nIbYlKguSinr7hegfypZ9tXH7fDVSuuO1gJTVDhbVjR4mE5RoywMULNElWEomo8T2ypxo6ZhRS8lP9BrzH1ir8h2RhB2QMXp7F19mpl7ES4z//6pAUDwKhD6B6y86sWPp5atdVxmZ7vrq1Q+Jval2nJwu2BUIZKa7mpOBEOjWr2oFrhbauLbcTXDq+pzP7EqKUGpjp+6bYcLzwsnrMgqPk9JPF8bFkvejWH/rx5Zcq8WbFgZETy+6iPEi6iBfsMy1edC6G2J2t3J3lA4g0OswXIZ9fdNgC3N5iWH5BE9k2nj2nCQKoV6bNPAlaP+JhUW1hs7sEvzN/olv0zz+ryAFYCqhKwj5WkDcynwp8v2qU1DKs36Uqrlqo9pAFQSgzxYi9ZbtDrzz+AmzJe/Mt6/xuFjCxum6/OSxOEFpwtcf9n5wBBV2QT2x/pHw2a4s4s7qr/Yszb8q5FlzReFshuP3KDA3H1VIMav1Jj6Sz6wcWWREI+QmRAEaiwQ2GwGxonJoqK5NgaH7TY38UH7zhWW2yhJA4kuSAl7K4GzIXscRLvk3d5ExY4Y7WSSMca5TZ/ZTGgMEjerHk5bR2jOSTvi2bByaA=
+  on:
+    tags: true
+    repo: FNCxPro/electron-publisher-gcs
