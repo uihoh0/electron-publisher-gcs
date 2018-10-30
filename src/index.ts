@@ -90,12 +90,12 @@ export default class GCSPublisher extends HttpPublisher {
       resumable: true,
       ...packageContent['publish-gcs']
     };
-    if (typeof config.serviceAccount === 'string') {
-      config.serviceAccount = require(config.serviceAccount);
-    }
     if (typeof process.env.GCS_SERVICE_ACCOUNT === 'string') {
       config.serviceAccount = JSON.parse(process.env.GCS_SERVICE_ACCOUNT);
+    } else if (typeof config.serviceAccount === 'string') {
+      config.serviceAccount = require(config.serviceAccount);
     }
+
     return config;
   }
   protected getBucketName(): string {
