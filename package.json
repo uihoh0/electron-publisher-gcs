@@ -1,6 +1,6 @@
 {
   "name": "electron-publisher-gcs",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "electron-builder Google Cloud Storage bucket publisher (because GCS's S3-compat API doesn't support the S3 publisher)",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
