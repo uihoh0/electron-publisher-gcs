@@ -1,6 +1,6 @@
 # electron-publisher-gcs
 [![Build Status](https://travis-ci.org/FNCxPro/electron-publisher-gcs.svg?branch=master)](https://travis-ci.org/FNCxPro/electron-publisher-gcs)
-
+ 
 electron-builder Google Cloud Storage bucket publisher (because GCS's S3-compat API doesn't support the S3 publisher)
 
 Heavily inspired by @zalewskip123's [electron-publisher-simple-http](https://github.com/zalewskip123/electron-publisher-simple-http/)
