@@ -7,6 +7,9 @@
   "repository": "git@github.com:FNCxPro/electron-publisher-gcs.git",
   "author": "Seth Stephens <seth@sethstephens.me>",
   "license": "GPL-3.0-only",
+  "files": [
+    "dist"
+  ],
   "bugs": {
     "url": "https://github.com/FNCxPro/electron-publisher-gcs/issues"
   },
