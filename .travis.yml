@@ -1,14 +1,15 @@
 language: node_js
 node_js:
-- 10
+  - 10
 cache: yarn
 install:
-- yarn install
+  - yarn install
 script:
-- yarn lint
-- yarn build
+  - yarn lint
+  - yarn build
 deploy:
   provider: npm
+  skip_cleanup: true
   email: relative@outlook.ie
   api_key:
     secure: j7vu28Ct7NAaelKEg/UAFwLBOP4IT7zHaoaMNH+lG7QbfcvejASx5MsY34i8aV6UC9EqKrVbfhougJAzA5f6SAG7C7pwLyhGIweDmgHmaVUA63i/+zWwWemLtK7eG4gzL6Hp+p3xvIg1wMcUKLVCe3PxibXr7lhpk67SN16tgo5TrRiABfdlzHB3b2Jw/Rc0F3cG9shF64XYQTvY5So2OTgxuym2IxpUZKaunI8D8hLcYXD3ObnnwlR7QP9958NeotRP9Pk0h2/aT06DIYfugFMyNh14OpjNpz5wspXPebabph8M+HAQivdqk9xQV2yq6zquAzPhKqhZMNzeda3gv9QhPmK8+YBckgDFALbZ4PUmHgCrMucuxH6x1YIWO+xiCuEpKtUx+U9tAEnBZuCqYUft3Dpg2TRi+66WhhzKUfQXzkZUZexa3auNzwP7lkQDQSmm8LmIZSubf83JKe/0X6BRg1PcszMz77y0ekcehIFtuEALvDwbx0vClGs2Z6CPKUNGlSVXiNOWEdVreOVeDDZU0kyuMEYTfRTT/Rdb6ICwQv/75CzcpibxJDAS8dywWq+6ypFxl/7LQ+Xdru40PzoDDk3CaMjodEIey9GLrJeEzkpwQ+XyBx4ToLTV7G7xIi1F1VO2z9a7P1aENNAtWo0lxl8JWv/5NABAuq6Xshw=
